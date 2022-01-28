@@ -93,4 +93,17 @@ require([
     })
     view.ui.add(searchEx, {position:"top-right"});
 
+    const simple = {
+        type: 'simple',
+        symbol:{
+            type: "simple-marker",
+            size: 10,
+            color: "pink",
+            outline:{
+                width: 1,
+                color: "grey"
+            }
+        }
+    };
+    fl.renderer = simple;
 });
